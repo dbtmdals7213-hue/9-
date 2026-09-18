@@ -1,0 +1,18 @@
+MobaXterm
+10-6. 시작 ~
+설정할 것
+10.6 보고 따라 실행
+sudo apt update
+sudo apt install openjdk-21-jdk					->		Y
+sudo nano /etc/environment						->		10-7. 4번 복사, 우클 paste
+sudo apt-get install tomcat9						->		Y
+sudo nano /lib/systemd/system/tomcat9.service		->		tomcat9.service 파일 열기
+[Service] 섹션에 환경 변수2줄 추가	#Configuration		->		10.8 참조하여 복사, 우클 붙여넣기
+sudo systemctl daemon-reload					->		변경 사항 저장 후 시스템에 반영
+sudo systemctl restart tomcat9					->		변경 후 Tomcat을 다시 시작
+http://본인 서버 아이피 주소:8080					->		웹 브라우저 주소창에 입력
+/var/lib/tomcat9/webapps/ROOT/index.html			->		위 주소 경로
+데이터베이스 서버 생성 및 접속					->		10.9 보고 따라 실행
+10-9. 6번 보고 따라 실행
+10-6. WinToUbuntuDeployGuide.html 파일 참조
+10-8. 보고 사이트 배포
